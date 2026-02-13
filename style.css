@@ -1,6 +1,6 @@
-/* ═══════════════════════════════════════════
+/* ___________________________________________
    style.css — Blog David PLOYE
-   ═══════════════════════════════════════════ */
+   ___________________________________________ */
 
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -184,11 +184,11 @@ section { scroll-margin-top: 64px; }
 .cv-intro p { font-size: 0.95rem; line-height: 1.8; color: rgba(255,255,255,0.85); }
 .cv-intro p strong { color: var(--accent); }
 
-/* Expériences */
+/* Titre de groupe */
 .exp-section-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.3rem; color: var(--navy); font-weight: 700;
-  margin-bottom: 28px; padding-bottom: 12px;
+  margin-bottom: 16px; padding-bottom: 12px;
   border-bottom: 2px solid var(--border);
   display: flex; align-items: center; gap: 12px;
 }
@@ -196,37 +196,70 @@ section { scroll-margin-top: 64px; }
   width: 10px; height: 10px; border-radius: 50%;
   background: var(--accent); flex-shrink: 0;
 }
-.timeline { position: relative; padding-left: 28px; }
-.timeline::before {
-  content: ''; position: absolute;
-  left: 4px; top: 6px; bottom: 0; width: 2px;
-  background: linear-gradient(var(--border), transparent);
+
+/* ── ACCORDION TIMELINE ── */
+.accordion { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+
+.acc-item {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
 }
-.timeline-item {
-  position: relative; margin-bottom: 36px;
-  animation: fadeUp 0.6s ease both;
+.acc-item:hover { box-shadow: 0 4px 16px rgba(15,34,64,0.08); }
+.acc-item.key { border-left: 3px solid var(--accent); }
+
+/* En-tête cliquable */
+.acc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  cursor: pointer;
+  background: var(--white);
+  user-select: none;
+  gap: 12px;
+  transition: background 0.15s;
 }
-.timeline-item::before {
-  content: ''; position: absolute;
-  left: -27px; top: 7px;
-  width: 10px; height: 10px; border-radius: 50%;
-  background: var(--white); border: 2px solid var(--sky);
-}
-.timeline-item.key::before { background: var(--accent); border-color: var(--accent); }
-.tl-header {
-  display: flex; justify-content: space-between;
-  align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 4px;
-}
-.tl-company { font-weight: 700; font-size: 1rem; color: var(--navy); }
-.tl-date {
+.acc-header:hover { background: #faf9f6; }
+.acc-item.open .acc-header { background: #faf9f6; border-bottom: 1px solid var(--border); }
+
+.acc-header-left { display: flex; align-items: baseline; gap: 14px; flex: 1; min-width: 0; flex-wrap: wrap; }
+.acc-company { font-weight: 700; font-size: 1rem; color: var(--navy); white-space: nowrap; }
+.acc-role     { font-size: 0.88rem; color: var(--sky); font-weight: 500; }
+
+.acc-header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.acc-date {
   font-size: 0.78rem; font-weight: 500; color: var(--white);
   background: var(--sky); padding: 3px 10px; border-radius: 20px;
   white-space: nowrap;
 }
-.tl-role { font-size: 0.9rem; color: var(--sky); font-weight: 500; margin-bottom: 6px; }
-.tl-sector { font-size: 0.78rem; color: var(--muted); font-style: italic; margin-bottom: 8px; }
-.tl-desc { font-size: 0.88rem; color: #444; line-height: 1.65; }
-.tl-tech { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.acc-arrow {
+  width: 24px; height: 24px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted); flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.acc-item.open .acc-arrow { transform: rotate(180deg); color: var(--accent); }
+
+/* Corps déroulant */
+.acc-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.acc-item.open .acc-body { grid-template-rows: 1fr; }
+
+.acc-body-inner {
+  overflow: hidden;
+  padding: 0 20px;
+  transition: padding 0.35s ease;
+}
+.acc-item.open .acc-body-inner { padding: 20px; }
+
+.tl-sector { font-size: 0.78rem; color: var(--muted); font-style: italic; margin-bottom: 10px; }
+.tl-desc   { font-size: 0.88rem; color: #444; line-height: 1.7; margin-bottom: 12px; }
+.tl-tech   { display: flex; flex-wrap: wrap; gap: 6px; }
 .tl-tech span {
   font-size: 0.72rem; padding: 2px 9px;
   background: var(--light); border: 1px solid var(--border);
@@ -377,4 +410,5 @@ footer {
   .nav-links { display: none; }
   .presa-name { font-size: 2.8rem; }
   .blog-grid { grid-template-columns: 1fr; }
+  .acc-header-left { flex-direction: column; gap: 4px; }
 }

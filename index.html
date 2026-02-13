@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- ════════════════════ NAV ════════════════════ -->
+<!-- ___________________________NAV _____________________-->
 <nav>
   <div class="nav-brand">David <span>PLOYE</span></div>
   <ul class="nav-links">
@@ -21,7 +21,7 @@
   </ul>
 </nav>
 
-<!-- ════════════════════ PRESA ════════════════════ -->
+<!-- ______________PRESA ________________________-->
 <section id="presa">
   <div class="presa-grid-line"></div>
   <div class="presa-accent-bar"></div>
@@ -62,7 +62,7 @@
   </div>
 </section>
 
-<!-- ════════════════════ CV ════════════════════ -->
+<!--______________________ CV _____________________ -->
 <section id="cv">
   <div class="section-wrap">
     <div class="section-header">
@@ -86,114 +86,243 @@
           </p>
         </div>
 
-        <!-- Expériences clés -->
+        <!-- ─ EXPÉRIENCES CLÉS ─ -->
         <div class="exp-section-title">
           <span class="dot"></span> Expériences clés
         </div>
 
-        <div class="timeline">
+        <div class="accordion">
 
-          <div class="timeline-item key">
-            <div class="tl-header">
-              <span class="tl-company">ACG Synergies</span>
-              <span class="tl-date">06/2025 – 10/2025</span>
+          <!-- ACG Synergies -->
+          <div class="acc-item key">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">ACG Synergies</span>
+                <span class="acc-role">Directeur de projets SI &amp; Responsable Portefeuilles Projets</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">06/2025 – 10/2025</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Directeur de projets SI &amp; Responsable Portefeuilles Projets</div>
-            <div class="tl-sector">Secteur public — Immobilier — Bourg-en-Bresse</div>
-            <div class="tl-desc">Management d'une équipe de 3 chefs de projets. Direction des projets ERP (comptabilité, gestion locative et patrimoniale, construction) pour l'ensemble du GIE. Conception et pilotage du budget prévisionnel, suivi et reporting des KPI du Département Conseil.</div>
-            <div class="tl-tech"><span>ARAVIS DB2/AS400</span><span>MySQL</span><span>Debian</span><span>Sciforma</span><span>GLPI</span></div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Secteur public — Immobilier — Bourg-en-Bresse</div>
+                <div class="tl-desc">Management d'une équipe de 3 chefs de projets. Direction des projets ERP (comptabilité, gestion locative et patrimoniale, construction) pour l'ensemble du GIE. Conception et pilotage du budget prévisionnel, suivi et reporting des KPI du Département Conseil.</div>
+                <div class="tl-tech">
+                  <span>ARAVIS DB2/AS400</span><span>MySQL</span><span>Debian</span><span>Sciforma</span><span>GLPI</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="timeline-item key">
-            <div class="tl-header">
-              <span class="tl-company">PIMAN Group</span>
-              <span class="tl-date">05/2023 – 05/2025</span>
+          <!-- PIMAN Group -->
+          <div class="acc-item key">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">PIMAN Group</span>
+                <span class="acc-role">Directeur de projets &amp; Contract Manager</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">05/2023 – 05/2025</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Directeur de projets &amp; Contract Manager</div>
-            <div class="tl-sector">Secteur privé — Finances &amp; RH — Lyon</div>
-            <div class="tl-desc">
-              <strong>Mission CERFRANCE SSE :</strong> pilotage de 5 projets de déploiement d'ERP et progiciels (comptabilité, finance, contrôle de gestion, RH), dont une partie notable de développements spécifiques (BPP, Adequasys SI RH, IO ECF, Plateforme Effinum, DR en SaaS).<br>
-              <strong>Mission EDF Group (DIGIT) :</strong> Contract Manager Senior — pilotage d'une vingtaine de marchés publics de l'AO au cycle de vie complet (build et run), reporting auprès du Département DIGIT.
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Secteur privé — Finances &amp; RH — Lyon</div>
+                <div class="tl-desc">
+                  <strong>Mission CERFRANCE SSE :</strong> pilotage de 5 projets de déploiement d'ERP et progiciels (comptabilité, finance, contrôle de gestion, RH), dont une partie notable de développements spécifiques (BPP, Adequasys SI RH, IO ECF, Plateforme Effinum, DR en SaaS).<br><br>
+                  <strong>Mission EDF Group (DIGIT) :</strong> Contract Manager Senior — pilotage d'une vingtaine de marchés publics de l'AO au cycle de vie complet (build et run), reporting auprès du Département DIGIT, optimisation des marchés.
+                </div>
+                <div class="tl-tech">
+                  <span>SAP</span><span>Redmine</span><span>Jira</span><span>Orchestra</span><span>Linux Debian</span><span>SQL Server</span><span>PSQL</span><span>LAMP/WAMP</span>
+                </div>
+              </div>
             </div>
-            <div class="tl-tech"><span>SAP</span><span>Redmine</span><span>Jira</span><span>Orchestra</span><span>Linux Debian</span><span>SQL Server</span><span>PSQL</span><span>LAMP/WAMP</span></div>
           </div>
 
-          <div class="timeline-item">
-            <div class="tl-header">
-              <span class="tl-company">CGI</span>
-              <span class="tl-date">07/2022 – 04/2023</span>
+          <!-- CGI -->
+          <div class="acc-item">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">CGI</span>
+                <span class="acc-role">Directeur de projets — Responsable de comptes (AURA, IDF)</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">07/2022 – 04/2023</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Directeur de projets — Responsable de comptes (AURA, IDF)</div>
-            <div class="tl-sector">Secteur public — Finance — Lyon</div>
-            <div class="tl-desc">Déploiement de l'ERP financier Grand Angle auprès de grands comptes (CNFPT, Région AURA, Métropole de Lyon). Responsable de 12 clients en région sud-est. Animation de la gouvernance client et du club utilisateur pour définir la roadmap produit. Pilotage de la TMA et suivi contractuel.</div>
-            <div class="tl-tech"><span>Grand Angle</span><span>Oracle</span><span>Java/Angular</span><span>Azure</span><span>Sharepoint</span><span>Jira</span><span>MS Project</span><span>BO</span></div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Secteur public — Finance — Lyon</div>
+                <div class="tl-desc">Déploiement de l'ERP financier Grand Angle auprès de grands comptes (CNFPT, Région AURA, Métropole de Lyon). Responsable de 12 clients en région sud-est. Animation de la gouvernance client et du club utilisateur pour définir la roadmap produit. Pilotage de la TMA et suivi contractuel.</div>
+                <div class="tl-tech">
+                  <span>Grand Angle</span><span>Oracle</span><span>Java/Angular</span><span>Azure</span><span>Sharepoint</span><span>Jira</span><span>MS Project</span><span>BO</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="timeline-item key">
-            <div class="tl-header">
-              <span class="tl-company">CIRIL GROUP</span>
-              <span class="tl-date">01/2014 – 07/2022</span>
+          <!-- CIRIL GROUP -->
+          <div class="acc-item key">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">CIRIL GROUP</span>
+                <span class="acc-role">Directeur de projets — Responsable de comptes (AURA, BFC, CVL, IDF)</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">01/2014 – 07/2022</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Directeur de projets — Responsable de comptes (AURA, BFC, CVL, IDF)</div>
-            <div class="tl-sector">Secteur public — Finance &amp; RH — Lyon</div>
-            <div class="tl-desc">Environ 150 projets ERP pilotés (Civil Net RH, Finances, Enfance). CA d'environ 2 M€/an, 80 consultants gérés simultanément, 180 clients directs couvrant près de 300 établissements. Mise en œuvre de solutions d'hébergement, télétransmission, dématérialisation, GED et portails intranet. Ingénierie vente et avant-vente lors d'AO.</div>
-            <div class="tl-tech"><span>Oracle</span><span>PostgreSQL</span><span>Java/C</span><span>NGINX</span><span>BO</span><span>SX CXM</span><span>Civil Net</span><span>SYNAAPS</span></div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Secteur public — Finance &amp; RH — Lyon</div>
+                <div class="tl-desc">Environ 150 projets ERP pilotés (Civil Net RH, Finances, Enfance). CA d'environ 2 M€/an, 80 consultants gérés simultanément, 180 clients directs couvrant près de 300 établissements. Mise en œuvre de solutions d'hébergement, télétransmission, dématérialisation, GED et portails intranet. Ingénierie vente et avant-vente lors d'AO.</div>
+                <div class="tl-tech">
+                  <span>Oracle</span><span>PostgreSQL</span><span>Java/C</span><span>NGINX</span><span>BO</span><span>SX CXM</span><span>Civil Net</span><span>SYNAAPS</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
+        </div><!-- /accordion expériences clés -->
 
-        <!-- Autres expériences -->
-        <div class="exp-section-title" style="margin-top: 48px;">
+        <!-- ─ AUTRES EXPÉRIENCES ─ -->
+        <div class="exp-section-title" style="margin-top: 40px;">
           <span class="dot"></span> Autres expériences
         </div>
 
-        <div class="timeline">
+        <div class="accordion">
 
-          <div class="timeline-item">
-            <div class="tl-header">
-              <span class="tl-company">DPL Conseil</span>
-              <span class="tl-date">09/2010 – 12/2013</span>
+          <!-- DPL Conseil -->
+          <div class="acc-item">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">DPL Conseil</span>
+                <span class="acc-role">Chef de projets informatiques</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">09/2010 – 12/2013</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Chef de projets informatiques</div>
-            <div class="tl-sector">Banque / Assurance — Lyon</div>
-            <div class="tl-desc">Adaptation et déploiement d'ERP pour le secteur banque/assurance. Rédaction des CDC, SFG, SFT. Planification avec les prestataires (MOE et MOA). Animation des COPIL/COPROJ/COTECH et groupes de travail.</div>
-            <div class="tl-tech"><span>SAP</span><span>MS Project</span><span>Redmine</span><span>ERP 3-tiers</span></div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Banque / Assurance — Lyon</div>
+                <div class="tl-desc">Adaptation et déploiement d'ERP pour le secteur banque/assurance. Rédaction des CDC, SFG, SFT. Planification avec les prestataires (MOE et MOA). Animation des COPIL/COPROJ/COTECH et groupes de travail.</div>
+                <div class="tl-tech">
+                  <span>SAP</span><span>MS Project</span><span>Redmine</span><span>ERP 3-tiers</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="tl-header">
-              <span class="tl-company">BNP Paribas</span>
-              <span class="tl-date">09/2008 – 08/2010</span>
+          <!-- BNP Paribas -->
+          <div class="acc-item">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">BNP Paribas</span>
+                <span class="acc-role">Chef de projets informatiques</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">09/2008 – 08/2010</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Chef de projets informatiques</div>
-            <div class="tl-sector">Banque — Paris (consultant MICROPOLE SA)</div>
-            <div class="tl-desc">Refonte complète du SI financier et de gestion. Pilotage de plusieurs projets simultanés et d'une équipe de 10 personnes pour l'adaptation des SI financiers aux mutations du SI global.</div>
-            <div class="tl-tech"><span>SAP</span><span>AXWAY ARE/AIS/EDI</span><span>Coda</span><span>RDJ</span><span>OS UNIX</span></div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Banque — Paris (consultant MICROPOLE SA)</div>
+                <div class="tl-desc">Refonte complète du SI financier et de gestion. Pilotage de plusieurs projets simultanés et d'une équipe de 10 personnes pour l'adaptation des SI financiers aux mutations du SI global.</div>
+                <div class="tl-tech">
+                  <span>SAP</span><span>AXWAY ARE/AIS/EDI</span><span>Coda</span><span>RDJ</span><span>OS UNIX</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="tl-header">
-              <span class="tl-company">MACIF</span>
-              <span class="tl-date">12/2006 – 09/2008</span>
+          <!-- MACIF -->
+          <div class="acc-item">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">MACIF</span>
+                <span class="acc-role">Chef de projets informatiques</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">12/2006 – 09/2008</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Chef de projets informatiques</div>
-            <div class="tl-sector">Assurance — Lille (consultant cabinet AOA)</div>
-            <div class="tl-desc">Création de la branche santé Macif Mutualité. Management d'une équipe de 8 personnes. Déploiement de l'ERP SN Santé (gestion des prestations et contrats de santé, CRM, télétransmissions). Suivi de certification qualité ISO 9001 (AFNOR) pour une équipe de 30 personnes.</div>
-            <div class="tl-tech"><span>SN Santé</span><span>AS400 ESQUIF/ANETO</span><span>Oracle</span><span>BO</span></div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Assurance — Lille (consultant cabinet AOA)</div>
+                <div class="tl-desc">Création de la branche santé Macif Mutualité. Management d'une équipe de 8 personnes. Déploiement de l'ERP SN Santé (gestion des prestations et contrats de santé, CRM, télétransmissions). Suivi de certification qualité ISO 9001 (AFNOR) pour une équipe de 30 personnes.</div>
+                <div class="tl-tech">
+                  <span>SN Santé</span><span>AS400 ESQUIF/ANETO</span><span>Oracle</span><span>BO</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="tl-header">
-              <span class="tl-company">Mutuelle MNH</span>
-              <span class="tl-date">01/2001 – 12/2005</span>
+          <!-- Mutuelle MNH -->
+          <div class="acc-item">
+            <div class="acc-header" role="button" aria-expanded="false">
+              <div class="acc-header-left">
+                <span class="acc-company">Mutuelle MNH</span>
+                <span class="acc-role">Chef de projets informatiques</span>
+              </div>
+              <div class="acc-header-right">
+                <span class="acc-date">01/2001 – 12/2005</span>
+                <span class="acc-arrow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="tl-role">Chef de projets informatiques</div>
-            <div class="tl-sector">Assurance — Lyon</div>
-            <div class="tl-desc">Création de la plateforme «&nbsp;Ligne Claire&nbsp;» pour MNH, MNT et MG (environ 3,1 M de bénéficiaires). Pilotage du progiciel TP Assur (soins dentaires / optiques), d'un site web santé et d'un intranet. Management d'une équipe de 5 personnes. Internalisation des compétences de paramétrage par rétro-ingénierie.</div>
-            <div class="tl-tech"><span>TP Assur</span><span>Oracle/Java</span><span>CRM Conso+</span><span>BO</span></div>
+            <div class="acc-body">
+              <div class="acc-body-inner">
+                <div class="tl-sector">Assurance — Lyon</div>
+                <div class="tl-desc">Création de la plateforme «&nbsp;Ligne Claire&nbsp;» pour MNH, MNT et MG (environ 3,1 M de bénéficiaires). Pilotage du progiciel TP Assur (soins dentaires / optiques), d'un site web santé et d'un intranet. Management d'une équipe de 5 personnes. Internalisation des compétences de paramétrage par rétro-ingénierie.</div>
+                <div class="tl-tech">
+                  <span>TP Assur</span><span>Oracle/Java</span><span>CRM Conso+</span><span>BO</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
+        </div><!-- /accordion autres expériences -->
+
       </div><!-- /col principale -->
 
       <!-- SIDEBAR -->
@@ -356,7 +485,7 @@
   </div>
 </section>
 
-<!-- ════════════════════ FOOTER / CONTACT ════════════════════ -->
+<!-- ________________________FOOTER / CONTACT _______________________ -->
 <footer id="contact">
   <div class="footer-name">David PLOYE</div>
   <div class="footer-sub">Directeur de projets IT &amp; Responsable de comptes · Caluire-et-Cuire</div>
@@ -368,6 +497,29 @@
   <div class="footer-divider"></div>
   <div class="footer-copy">© 2026 David PLOYE — Tous droits réservés</div>
 </footer>
+
+<!-- _____________________ACCORDION JS ________________-->
+<script>
+  document.querySelectorAll('.acc-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.closest('.acc-item');
+      const isOpen = item.classList.contains('open');
+
+      // Fermer tous les items du même accordion
+      const siblings = item.closest('.accordion').querySelectorAll('.acc-item');
+      siblings.forEach(s => {
+        s.classList.remove('open');
+        s.querySelector('.acc-header').setAttribute('aria-expanded', 'false');
+      });
+
+      // Ouvrir le cliqué s'il était fermé
+      if (!isOpen) {
+        item.classList.add('open');
+        header.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
