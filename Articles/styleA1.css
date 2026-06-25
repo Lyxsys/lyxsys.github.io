@@ -412,3 +412,8 @@ footer {
   .blog-grid { grid-template-columns: 1fr; }
   .acc-header-left { flex-direction: column; gap: 4px; }
 }
+/* ── COMPORTEMENT PROPRE À CONCLUSION ── */
+.conclusion strong {
+    color: #FFD700;   /* jaune doré */
+    font-weight: bold;
+}
