@@ -414,6 +414,6 @@ footer {
 }
 /* ── COMPORTEMENT PROPRE À CONCLUSION ── */
 .conclusion strong {
-    color: #FFD700;   /* jaune doré */
+    color: #c8963e;   /* jaune doré */
     font-weight: bold;
 }
